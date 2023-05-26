@@ -30,7 +30,8 @@
     ".next/types/**/*.ts",
     "tailwind.config.js",
     "next.config.js",
-    "postcss.config.js"
+    "postcss.config.js",
+    ".eslintrc.cjs"
   ],
   "exclude": ["node_modules"]
 }

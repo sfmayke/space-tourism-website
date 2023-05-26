@@ -1,10 +1,11 @@
+import Navbar from "@/components/layout/navbar";
 import "./globals.css";
 import { Bellefair, Barlow_Condensed, Barlow } from "next/font/google";
 
-const inter = Bellefair({ subsets: ["latin"], weight: "400" });
+const bellefair = Bellefair({ subsets: ["latin"], weight: "400" });
 const barlow_condensed = Barlow_Condensed({
   subsets: ["latin"],
-  weight: "400",
+  weight: ["400", "700"],
   variable: "--font-barlow_condensed",
 });
 const barlow = Barlow({
@@ -28,7 +29,12 @@ export default function RootLayout({
       lang="en"
       className={`${barlow.variable} ${barlow_condensed.variable}`}
     >
-      <body className={inter.className}>{children}</body>
+      <body className={bellefair.className}>
+        <Navbar />
+        <main className="flex min-h-screen flex-col items-center justify-between p-24">
+          {children}
+        </main>
+      </body>
     </html>
   );
 }

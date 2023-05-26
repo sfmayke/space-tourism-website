@@ -2,12 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --phone-screen: "375px";
-  --tablet-screen: "768px";
-}
-
 @layer base {
+  :root {
+    --mobile-screen: 375px;
+    --tablet-screen: 768px;
+  }
+
+  html {
+    @apply text-white;
+  }
+
   h1 {
     @apply text-h1;
   }

@@ -7,6 +7,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        mobile: "375px",
+        tablet: "768px",
+        desktop: "1440px",
+      },
       fontSize: {
         h1: ["9.375rem", { lineHeight: "10.744rem" }],
         h2: ["6.25rem", { lineHeight: "7.163rem" }],
@@ -20,15 +25,11 @@ module.exports = {
       },
       fontFamily: {
         barlow: ["var(--font-barlow)"],
-        "barlow-condensed": ["var(--font-barlow-condensed)"],
+        "barlow-condensed": ["var(--font-barlow_condensed)"],
       },
       colors: {
         primary: "#0B0D17",
         secondary: "#D0D6F9",
-      },
-      screens: {
-        phone: "var(--phone-screen)",
-        tablet: "var(--tablet-screen)",
       },
     },
   },
