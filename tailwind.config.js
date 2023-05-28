@@ -14,14 +14,14 @@ module.exports = {
       },
       fontSize: {
         h1: ["9.375rem", { lineHeight: "10.744rem" }],
-        h2: ["6.25rem", { lineHeight: "7.163rem" }],
+        h2: ["6.25rem", { lineHeight: "7.188rem" }],
         h3: ["3.5rem", { lineHeight: "4.011rem" }],
         h4: ["4.011rem", { lineHeight: "2.292rem" }],
         h5: ["1.75rem", { lineHeight: "2.1rem", letterSpacing: "0.295rem" }],
         sh1: ["1.75rem", { lineHeight: "2.006rem" }],
         sh2: ["0.875rem", { lineHeight: "1.05rem", letterSpacing: "0.148rem" }],
         nav: ["1rem", { lineHeight: "1.2rem", letterSpacing: "0.169rem" }],
-        body: ["1.125rem", { lineHeight: "2rem" }],
+        body: ["0.938rem", { lineHeight: "1.563rem" }],
       },
       fontFamily: {
         barlow: ["var(--font-barlow)"],

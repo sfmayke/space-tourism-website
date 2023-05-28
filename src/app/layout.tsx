@@ -1,4 +1,4 @@
-import Navbar from "@/components/layout/navbar";
+import Navbar from "@/components/navbar";
 import "./globals.css";
 import { Bellefair, Barlow_Condensed, Barlow } from "next/font/google";
 
@@ -31,7 +31,7 @@ export default function RootLayout({
     >
       <body className={bellefair.className}>
         <Navbar />
-        <main className="flex min-h-screen flex-col items-center justify-between p-24">
+        <main className="flex min-h-screen flex-col items-center justify-between p-6 desktop:p-24">
           {children}
         </main>
       </body>

@@ -1,6 +1,10 @@
-export default function Logo() {
+export default function LogoSvgIcon({ className }: { className: string }) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 48 48"
+      className={className}
+    >
       <g fill="none" fillRule="evenodd">
         <circle cx="24" cy="24" r="24" fill="#FFF" />
         <path

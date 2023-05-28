@@ -15,7 +15,18 @@ export default function Home() {
           alt="home-background-space"
         />
       </picture>
-      <h1>Hello World</h1>
+      <article className="flex flex-col items-center gap-4">
+        <p className="font-barlow-condensed text-nav text-secondary">
+          SO, YOU WANT TO TRAVEL TO
+        </p>
+        <h2 className="text-[80px] leading-[100px]">SPACE</h2>
+        <p className="text-center font-barlow text-body text-secondary">
+          Let’s face it; if you want to go to space, you might as well genuinely
+          go to outer space and not hover kind of on the edge of it. Well sit
+          back, and relax because we’ll give you a truly out of this world
+          experience!
+        </p>
+      </article>
     </>
   );
 }
