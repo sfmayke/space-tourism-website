@@ -1,3 +1,5 @@
+import ExploreButtom from "@/components/expore-buttom";
+
 export default function Home() {
   return (
     <>
@@ -16,8 +18,8 @@ export default function Home() {
         />
       </picture>
       <article className="flex flex-col items-center gap-4">
-        <p className="font-barlow-condensed text-nav text-secondary">
-          SO, YOU WANT TO TRAVEL TO
+        <p className="font-barlow-condensed text-nav uppercase text-secondary">
+          so, you want to travel to
         </p>
         <h2 className="text-[80px] leading-[100px]">SPACE</h2>
         <p className="text-center font-barlow text-body text-secondary">
@@ -27,6 +29,7 @@ export default function Home() {
           experience!
         </p>
       </article>
+      <ExploreButtom />
     </>
   );
 }

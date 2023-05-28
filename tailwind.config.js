@@ -12,6 +12,10 @@ module.exports = {
         tablet: "768px",
         desktop: "1440px",
       },
+      scale: {
+        175: "1.75",
+        200: "2",
+      },
       fontSize: {
         h1: ["9.375rem", { lineHeight: "10.744rem" }],
         h2: ["6.25rem", { lineHeight: "7.188rem" }],
