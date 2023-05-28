@@ -1,5 +1,5 @@
-import Logo from "@/components/icons/logo";
-import MobileMenuSvgIcon from "@/components/icons/mobile-menu";
+import Logo from "@/components/layout/logo";
+import MobileMenuSvgIcon from "@/components/layout/mobile-menu";
 import NavLink from "./nav-link";
 
 type NavItem = {
@@ -15,17 +15,17 @@ const navegation: NavItem[] = [
     number: "00",
   },
   {
-    href: "/",
+    href: "/destination",
     label: "destination",
     number: "01",
   },
   {
-    href: "/",
+    href: "/crew",
     label: "crew",
     number: "02",
   },
   {
-    href: "/",
+    href: "/technology",
     label: "technology",
     number: "03",
   },

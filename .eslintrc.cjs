@@ -21,5 +21,6 @@ module.exports = {
         format: ["camelCase", "UPPER_CASE", "snake_case"],
       },
     ],
+    "react/require-default-props": 0,
   },
 };
