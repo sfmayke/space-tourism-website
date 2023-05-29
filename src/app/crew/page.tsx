@@ -1,10 +1,11 @@
 import BackgroundImage from "@ui/background-image";
+import backgroundImageSrc from "@public/images/crew/background-crew-desktop.jpg";
 
 export default function Crew() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-between p-6 tablet:pt-0 desktop:flex-row desktop:p-40">
       <BackgroundImage
-        srcDefault="/images/crew/background-crew-desktop.jpg"
+        srcDefault={backgroundImageSrc}
         srcTablet="/images/crew/background-crew-tablet.jpg"
         srcMobile="/images/crew/background-crew-mobile.jpg"
         alt="crew-background-space"
