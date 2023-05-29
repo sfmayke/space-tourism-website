@@ -1,10 +1,15 @@
-import BackgroundImage from "@/components/home/background-image";
+import BackgroundImage from "@ui/background-image";
 import ExploreButtom from "@/components/home/expore-buttom";
 
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-between p-6 tablet:pt-0 desktop:flex-row desktop:p-40">
-      <BackgroundImage />
+      <BackgroundImage
+        srcDefault="/images/home/background-home-desktop.jpg"
+        srcTablet="/images/home/background-home-tablet.jpg"
+        srcMobile="/images/home/background-home-mobile.jpg"
+        alt="home-background-space"
+      />
       <article className="flex flex-col items-center gap-4 tablet:mt-[6.625rem] tablet:max-w-md tablet:gap-6 desktop:items-start">
         <p className="font-barlow-condensed text-nav uppercase text-secondary tablet:text-xl desktop:text-sh1">
           so, you want to travel to

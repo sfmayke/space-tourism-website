@@ -1,4 +1,3 @@
-// import Navbar from "@/components/layout/navbar";
 import Navbar from "@layout/navbar";
 import "./globals.css";
 import { Bellefair, Barlow_Condensed, Barlow } from "next/font/google";
