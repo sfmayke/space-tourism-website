@@ -1,11 +1,12 @@
 import BackgroundImage from "@ui/background-image";
 import ExploreButtom from "@/components/home/expore-buttom";
+import backgroundImageSrc from "@public/images/home/background-home-desktop.jpg";
 
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-between p-6 tablet:pt-0 desktop:flex-row desktop:p-40">
       <BackgroundImage
-        srcDefault="/images/home/background-home-desktop.jpg"
+        srcDefault={backgroundImageSrc}
         srcTablet="/images/home/background-home-tablet.jpg"
         srcMobile="/images/home/background-home-mobile.jpg"
         alt="home-background-space"

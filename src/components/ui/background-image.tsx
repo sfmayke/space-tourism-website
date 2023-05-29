@@ -1,5 +1,7 @@
+import Image, { StaticImageData } from "next/image";
+
 interface Props {
-  srcDefault: string;
+  srcDefault: string | StaticImageData;
   srcTablet?: string;
   srcMobile?: string;
   tabletMedia?: number;
@@ -29,7 +31,7 @@ export default function BackgroundImage({
           srcSet={srcTablet}
         />
       )}
-      <img src={srcDefault} alt={alt} />
+      <Image src={srcDefault} priority alt={alt} />
     </picture>
   );
 }

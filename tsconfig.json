@@ -22,7 +22,8 @@
     "paths": {
       "@/*": ["./src/*"],
       "@layout/*": ["./src/components/layout/*"],
-      "@ui/*": ["./src/components/ui/*"]
+      "@ui/*": ["./src/components/ui/*"],
+      "@public/*": ["./public/*"]
     }
   },
   "include": [

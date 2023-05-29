@@ -19,7 +19,8 @@ export default function NavLink({ href, children, className }: NavLinkProps) {
       className={cx(
         className,
         active ? "before:scale-100" : "before:scale-0",
-        "before:absolute before:bottom-0 before:h-[3px] before:w-[inherit] before:bg-white before:transition-transform hover:before:block hover:before:scale-100"
+        `before:absolute before:bottom-0 before:h-[3px] before:w-[inherit] before:bg-white before:transition-transform 
+        hover:before:block hover:before:scale-100`
       )}
       href={href}
     >
