@@ -41,14 +41,10 @@ export default function Navbar() {
           tablet:flex tablet:gap-9 tablet:px-12 tablet:py-10 
           desktop:gap-12 desktop:pl-32 desktop:pr-[10.313rem]"
         >
-          {/* before:absolute before:bottom-0 before:h-[3px] before:w-[inherit] before:bg-white */}
-
           {navegation.map(({ href, label, number }) => (
             <NavLink
               href={href}
-              className="relative flex h-[inherit] w-full items-center 
-              tablet:flex tablet:text-sh2
-              desktop:text-nav"
+              className="relative flex h-[inherit] w-full items-center tablet:flex tablet:text-sh2 desktop:text-nav"
             >
               <span className="hidden font-bold desktop:flex">{number}</span>
               &nbsp;{label}
