@@ -15,7 +15,14 @@ export default function NavLink({ href, children, className }: NavLinkProps) {
   const active = href === `/${segment}`;
 
   return (
-    <Link className={cx(className, active && "underline")} href={href}>
+    <Link
+      className={cx(
+        className,
+        active &&
+          "before:absolute before:bottom-0 before:h-[3px] before:w-[inherit] before:bg-white"
+      )}
+      href={href}
+    >
       {children}
     </Link>
   );
