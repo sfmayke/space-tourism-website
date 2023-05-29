@@ -32,9 +32,7 @@ export default function RootLayout({
     >
       <body className={bellefair.className}>
         <Navbar />
-        <main className="flex min-h-screen flex-col items-center justify-between p-6 desktop:p-24">
-          {children}
-        </main>
+        <main>{children}</main>
       </body>
     </html>
   );

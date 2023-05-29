@@ -15,10 +15,7 @@ export default function NavLink({ href, children, className }: NavLinkProps) {
   const active = href === `/${segment}`;
 
   return (
-    <Link
-      className={cx("tablet:flex", className, active && "underline")}
-      href={href}
-    >
+    <Link className={cx(className, active && "underline")} href={href}>
       {children}
     </Link>
   );
