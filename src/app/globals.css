@@ -6,6 +6,8 @@
   :root {
     --mobile-screen: 375px;
     --tablet-screen: 768px;
+
+    background-color: black;
   }
 
   html {
