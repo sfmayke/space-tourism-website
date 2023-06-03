@@ -3,7 +3,6 @@ import backgroundImage from "@public/images/destination/background-destination-d
 import Image from "next/image";
 import moonImage from "@public/images/destination/image-moon.png";
 import PlanetNavegationTabs from "@/components/destination/planet-navegation-tabs";
-import Divider from "@ui/divider";
 import PageAnimation from "../pageAnimation";
 import destinationData from "./destinations-data.json";
 
@@ -28,7 +27,6 @@ export default function Destination() {
           className="mt-7"
           destinations={destinationData.destinations}
         />
-        <Divider />
       </PageAnimation>
     </div>
   );
