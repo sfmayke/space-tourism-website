@@ -1,10 +1,10 @@
 "use client";
 
 import * as Tabs from "@radix-ui/react-tabs";
+import Divider from "@ui/divider";
+import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import Divider from "../ui/divider";
 import PlanetInfo from "./planet-info";
 
 type Planet = {
@@ -34,14 +34,13 @@ export default function PlanetNavegationTabs({
 
   return (
     <>
-      {/* <div className="relative mx-auto mt-8 h-44 w-44 desktop:h-96 desktop:w-96"> */}
       <AnimatePresence mode="wait">
         <motion.div
           className="relative mx-auto mt-8 h-44 w-44 desktop:h-96 desktop:w-96"
           key={selectedPlanet.name}
-          initial={{ left: 500 }}
-          animate={{ left: 0 }}
-          exit={{ left: -500 }}
+          initial={{ left: 100, opacity: 0 }}
+          animate={{ left: 0, opacity: 1 }}
+          exit={{ left: -100, opacity: 0 }}
         >
           <Image
             priority
@@ -52,7 +51,6 @@ export default function PlanetNavegationTabs({
           />
         </motion.div>
       </AnimatePresence>
-      {/* </div> */}
       <Tabs.Root
         onValueChange={(planet) => setSelectedPlanet(destinations[planet])}
         className={className}

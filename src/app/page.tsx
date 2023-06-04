@@ -1,6 +1,6 @@
-import BackgroundImage from "@ui/background-image";
 import ExploreButtom from "@/components/home/expore-buttom";
 import backgroundImageSrc from "@public/images/home/background-home-desktop.jpg";
+import BackgroundImage from "@ui/background-image";
 import PageAnimation from "./pageAnimation";
 
 export default function Home() {
