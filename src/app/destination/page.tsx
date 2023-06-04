@@ -1,7 +1,5 @@
 import BackgroundImage from "@/components/ui/background-image";
 import backgroundImage from "@public/images/destination/background-destination-desktop.jpg";
-import Image from "next/image";
-import moonImage from "@public/images/destination/image-moon.png";
 import PlanetNavegationTabs from "@/components/destination/planet-navegation-tabs";
 import PageAnimation from "../pageAnimation";
 import destinationData from "./destinations-data.json";
@@ -21,12 +19,8 @@ export default function Destination() {
             <span className="mr-4 font-bold opacity-25">01</span>
             pick your destination
           </p>
-          <Image src={moonImage} alt="moon-planet" className="mt-8 h-44 w-44" />
         </article>
-        <PlanetNavegationTabs
-          className="mt-7"
-          destinations={destinationData.destinations}
-        />
+        <PlanetNavegationTabs className="mt-7" destinations={destinationData} />
       </PageAnimation>
     </div>
   );
