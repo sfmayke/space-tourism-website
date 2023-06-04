@@ -23,13 +23,13 @@ export default function BackgroundImage({
     <picture className="absolute left-0 top-0 -z-10 w-full">
       {srcMobile && (
         <source
-          media={`(max-width: ${mobileMedia || 425}px)`}
+          media={`(max-width: ${mobileMedia ?? 425}px)`}
           srcSet={srcMobile}
         />
       )}
       {srcTablet && (
         <source
-          media={`(max-width: ${tabletMedia || 768}px)}`}
+          media={`(max-width: ${tabletMedia ?? 1280}px)`}
           srcSet={srcTablet}
         />
       )}
