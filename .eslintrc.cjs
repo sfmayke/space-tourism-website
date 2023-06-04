@@ -5,9 +5,9 @@ module.exports = {
     "next/core-web-vitals",
     "airbnb",
     "airbnb-typescript",
-    "prettier",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:react/jsx-runtime",
+    "prettier",
   ],
   parserOptions: {
     project: true,
