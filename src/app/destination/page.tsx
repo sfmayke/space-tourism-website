@@ -1,12 +1,12 @@
+import PlanetNavegationTabs from "@/components/destination/planet-navegation-tabs";
 import BackgroundImage from "@/components/ui/background-image";
 import backgroundImage from "@public/images/destination/background-destination-desktop.jpg";
-import PlanetNavegationTabs from "@/components/destination/planet-navegation-tabs";
 import PageAnimation from "../pageAnimation";
 import destinationData from "./destinations-data.json";
 
 export default function Destination() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-between p-6 tablet:pt-0 desktop:flex-row desktop:p-40">
+    <div className="flex min-h-screen flex-col items-center justify-between overflow-x-hidden p-6 tablet:pt-0 desktop:flex-row desktop:p-40">
       <BackgroundImage
         srcDefault={backgroundImage}
         srcTablet="/images/destination/background-destination-tablet.jpg"
