@@ -5,14 +5,14 @@ import PageAnimation from "./pageAnimation";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-between p-6 tablet:pt-0 desktop:flex-row desktop:p-40">
+    <div className="flex flex-col items-center justify-between p-6 tablet:pt-0 desktop:flex-row desktop:px-40 desktop:py-32">
       <BackgroundImage
         srcDefault={backgroundImageSrc}
         srcTablet="/images/home/background-home-tablet.jpg"
         srcMobile="/images/home/background-home-mobile.jpg"
         alt="home-background-space"
       />
-      <PageAnimation>
+      <PageAnimation className="flex flex-col items-center desktop:flex-row desktop:gap-96">
         <article className="flex flex-col items-center gap-4 tablet:mt-[6.625rem] tablet:max-w-md tablet:gap-6 desktop:items-start">
           <p className="font-barlow-condensed text-nav uppercase text-secondary tablet:text-xl desktop:text-sh1">
             so, you want to travel to
