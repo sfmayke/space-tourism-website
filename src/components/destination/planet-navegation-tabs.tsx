@@ -36,7 +36,7 @@ export default function PlanetNavegationTabs({
     <>
       <AnimatePresence mode="wait">
         <motion.div
-          className="relative mx-auto mt-8 h-44 w-44 tablet:h-[300px] tablet:w-[300px] desktop:h-96 desktop:w-96"
+          className="relative mx-auto mt-8 h-44 w-44 tablet:mt-16 tablet:h-[300px] tablet:w-[300px] desktop:h-96 desktop:w-96"
           key={selectedPlanet.name}
           initial={{ left: 100, opacity: 0 }}
           animate={{ left: 0, opacity: 1 }}
@@ -84,14 +84,14 @@ export default function PlanetNavegationTabs({
               value={selectedPlanet.name}
               key={selectedPlanet.travel}
             >
-              <h1 className="mt-7 flex justify-center text-h3 uppercase">
+              <h1 className="mt-7 flex justify-center text-h3 uppercase tablet:mt-9">
                 {selectedPlanet.name}
               </h1>
-              <p className="text-center font-barlow text-[15px] leading-6 text-secondary">
+              <p className="text-center font-barlow text-[15px] leading-6 text-secondary tablet:mt-2">
                 {selectedPlanet.description}
               </p>
               <Divider />
-              <div className="flex flex-col gap-8">
+              <div className="flex flex-col gap-3 tablet:flex-row tablet:justify-center tablet:gap-36">
                 <PlanetInfo
                   label="avg. distance"
                   info={selectedPlanet.distance}

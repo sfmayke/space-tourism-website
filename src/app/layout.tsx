@@ -1,6 +1,6 @@
 import Navbar from "@layout/navbar";
+import { Barlow, Barlow_Condensed, Bellefair } from "next/font/google";
 import "./globals.css";
-import { Bellefair, Barlow_Condensed, Barlow } from "next/font/google";
 
 const bellefair = Bellefair({ subsets: ["latin"], weight: "400" });
 const barlow_condensed = Barlow_Condensed({

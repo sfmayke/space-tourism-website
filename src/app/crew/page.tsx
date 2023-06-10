@@ -1,6 +1,6 @@
-import BackgroundImage from "@ui/background-image";
 import backgroundImageSrc from "@public/images/crew/background-crew-desktop.jpg";
-import PageAnimation from "../pageAnimation";
+import BackgroundImage from "@ui/background-image";
+import PageAnimation from "../../components/ui/page-animation";
 
 export default function Crew() {
   return (

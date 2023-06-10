@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { PropsWithChildren, useId } from "react";
 
 interface Props extends PropsWithChildren {
