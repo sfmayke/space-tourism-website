@@ -1,5 +1,6 @@
 "use client";
 
+import { cx } from "class-variance-authority";
 import { AnimatePresence, motion } from "framer-motion";
 import { PropsWithChildren, ReactNode } from "react";
 
@@ -23,7 +24,7 @@ export default function PageContainer({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 20 }}
-          className={motionClassName}
+          className={cx("w-full", motionClassName)}
         >
           {children}
         </motion.div>
