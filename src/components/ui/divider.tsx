@@ -9,6 +9,8 @@ interface Props {
 
 export default function Divider({ className }: Props) {
   return (
-    <Separator.Root className={cx("my-8 h-[1px] bg-[#383B4B]", className)} />
+    <Separator.Root
+      className={cx("my-8 h-[1px] w-full bg-[#383B4B]", className)}
+    />
   );
 }

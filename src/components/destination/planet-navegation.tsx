@@ -38,7 +38,9 @@ export default function PlanetNavegation({
     <div className={className}>
       <SlideAnimation
         motionKey={selectedPlanet.name}
-        className="relative mx-auto mt-8 h-44 w-44 tablet:mt-16 tablet:h-[300px] tablet:w-[300px] desktop:h-96 desktop:w-96"
+        className="relative mx-auto mt-8 h-44 w-44 
+        tablet:mt-16 tablet:h-[300px] tablet:w-[300px] 
+        desktop:mt-0 desktop:h-[445px] desktop:w-[445px]"
       >
         <Image
           priority
@@ -61,7 +63,8 @@ export default function PlanetNavegation({
             <Tabs.Trigger
               key={distance}
               className="relative font-barlow-condensed text-sh2 uppercase before:absolute
-              before:-bottom-2 before:h-[3px] before:bg-white before:transition-transform data-[state=active]:before:w-full"
+              before:-bottom-2 before:h-[3px] before:bg-white before:transition-transform data-[state=active]:before:w-full
+              desktop:text-nav"
               value={name}
             >
               {name}
@@ -69,21 +72,25 @@ export default function PlanetNavegation({
           ))}
         </Tabs.List>
         <SlideAnimation
-          className="relative"
           motionKey={selectedPlanet.distance + selectedPlanet.travel}
         >
           <Tabs.Content
             forceMount
             value={selectedPlanet.name}
             key={selectedPlanet.travel}
+            className="desktop:flex desktop:flex-col desktop:items-start"
           >
-            <h1 className="mt-7 flex justify-center text-h3 uppercase tablet:mt-9">
+            <h1 className="mt-7 flex justify-center text-h3 uppercase tablet:mt-9 desktop:mt-10 desktop:text-h2">
               {selectedPlanet.name}
             </h1>
-            <p className="text-center font-barlow text-[15px] leading-6 text-secondary tablet:mt-2 tablet:max-w-[35rem] tablet:text-[1rem] tablet:leading-7">
+            <p
+              className="text-center font-barlow text-[15px] leading-6 text-secondary 
+              tablet:mt-2 tablet:max-w-[35rem] tablet:text-[1rem] tablet:leading-7
+              desktop:mt-[18px] desktop:text-start desktop:text-body"
+            >
               {selectedPlanet.description}
             </p>
-            <Divider className="tablet:mb-7 tablet:mt-12" />
+            <Divider className="tablet:mb-7 tablet:mt-12 desktop:mt-14" />
             <div className="flex flex-col gap-3 tablet:flex-row tablet:justify-center tablet:gap-36">
               <PlanetInfo
                 label="avg. distance"

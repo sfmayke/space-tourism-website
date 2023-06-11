@@ -5,7 +5,7 @@ interface Props {
 
 export default function PlanetInfo({ label, info }: Props) {
   return (
-    <section className="flex flex-col items-center gap-3">
+    <section className="flex flex-col items-center gap-3 desktop:items-start">
       <h2 className="font-barlow-condensed text-sh2 uppercase text-secondary">
         {label}
       </h2>

@@ -23,13 +23,14 @@ export default function Destination() {
       desktop:flex-row desktop:px-40 desktop:pb-28 desktop:pt-[76px]"
     >
       <article className="flex flex-col items-center gap-4 tablet:mt-10 tablet:max-w-md tablet:gap-6 desktop:items-start">
-        <p className="font-barlow-condensed text-nav uppercase tablet:self-start tablet:text-xl tablet:leading-6">
+        <p className="font-barlow-condensed text-nav uppercase tablet:self-start tablet:text-xl tablet:leading-6 desktop:text-h5">
           <span className="mr-4 font-bold">01</span>
           pick your destination
         </p>
       </article>
       <PlanetNavegation
-        className="desktop:flex"
+        className="desktop:mt-16 desktop:flex desktop:items-end"
+        tabRootStyle="mt-[26px] tablet:mt-14 tablet:flex tablet:flex-col tablet:items-center desktop:m-0 desktop:items-start desktop:max-w-[444px]"
         destinations={destinationData as PlanetObj}
       />
     </PageContainer>
